@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Add Car Make";
+}
+
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-body">
+            <h5 class="card-title mb-4">Add Car Male Name</h5>
+            <form method="post" asp-controller="Admin" asp-action="AddCarMake">
+                <div class="mb-3">
+                    <label for="carMaleName" class="form-label">Car Male Name</label>
+                    <input name="name"
+                           id="name"
+                           type="text"
+                           class="form-control"
+                           placeholder="Enter the car's male name"
+                           required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
