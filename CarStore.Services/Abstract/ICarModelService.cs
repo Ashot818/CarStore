@@ -10,8 +10,8 @@ namespace CarStore.Services.Abstract
     public interface ICarModelService
     {
         Task<List<CarModel>> GetCarModelsAsync();
-        Task<CarModel> GetCarModelByIdAsync(Guid id);
-        Task<CarModel> UpdateCarModelAsync(CarModel carModel);
-        Task<CarModel> AddCarMode(CarModel carModel);
+        Task<CarModel?> GetCarModelByIdAsync(Guid id);
+        Task UpdateCarModelAsync(CarModel carModel);
+        Task AddCarModelAsync(CarModel carModel);
     }
 }

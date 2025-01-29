@@ -29,6 +29,8 @@ namespace CarStore.Web
 
             // add custom services
             builder.Services.AddScoped<ICarMakeService, CarMakeService>();
+            builder.Services.AddScoped<ICarModelService, CarModelService>();
+            builder.Services.AddScoped<ICarService, CarService>();
 
 
             var app = builder.Build();

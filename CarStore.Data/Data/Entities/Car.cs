@@ -22,7 +22,14 @@ namespace CarStore.Data.Data.Entities
         [Precision(18, 2)]
         public decimal? Price { get; set; }
 
-        public List<string> Images { get; set; } = null!;
+        [NotMapped]
+        public List<string>? Images
+        {
+            get
+            {
+                return new List<string>();
+            }
+        }
 
     }
 }
